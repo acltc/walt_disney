@@ -1,3 +1,7 @@
+body {
+    font-family: 'Righteous', cursive;
+}
+
 div.container {
     width: 100%;
     border: 1px solid gray;
@@ -6,30 +10,28 @@ div.container {
 header, footer {
     padding: 1em;
     color: white;
-    background-color: black;
+    background-color: purple;
     clear: left;
     text-align: center;
 }
 
 #food {
     float: left;
-    max-width: 160px;
+    width: 250px;
     margin: 0;
     padding: 1em;
+    height: 500px;
 }
 
-#food ul {
-    list-style-type: none;
-    padding: 0;
-}
-   
-#food ul a {
-    text-decoration: none;
-}
 
 #superpower {
-    margin-left: 170px;
+    margin-left: 250px;
     border-left: 1px solid gray;
     padding: 1em;
-    overflow: hidden;
+    height: 500px;
+}
+
+img {
+    width: 300px;
+    float: right;
 }
