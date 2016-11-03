@@ -41,6 +41,9 @@ header, footer {
     background-color: #111;
 }
 
+
+/************************** About Me Page ***************************/
+
 #food {
     float: left;
     width: 250px;
@@ -48,9 +51,6 @@ header, footer {
     padding: 1em;
     height: 500px;
 }
-
-/************************** About Me Page ***************************/
-
 
 #superpower {
     margin-left: 250px;
@@ -67,3 +67,29 @@ img {
 
 /************************** History Report ***************************/
 
+
+#quiz {
+    float: left;
+    width: 240px;
+    margin: 0;
+    padding: 10px;
+    height: 500px;
+}
+
+
+#biography {
+    margin-left: 250px;
+    border-left: 1px solid gray;
+    padding: 10px;
+    height: 500px;
+}
+
+#question-one-solution {
+    color: green;
+    display: none;
+}
+
+#question-two-solution {
+    color: green;
+    display: none;
+}
