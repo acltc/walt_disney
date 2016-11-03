@@ -15,6 +15,32 @@ header, footer {
     text-align: center;
 }
 
+/*Navbar*/
+
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4d004d;
+}
+
+#nav li {
+    float: left;
+}
+
+#nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#nav li a:hover {
+    background-color: #111;
+}
+
 #food {
     float: left;
     width: 250px;
@@ -22,6 +48,8 @@ header, footer {
     padding: 1em;
     height: 500px;
 }
+
+/************************** About Me Page ***************************/
 
 
 #superpower {
@@ -35,3 +63,7 @@ img {
     width: 300px;
     float: right;
 }
+
+
+/************************** History Report ***************************/
+
