@@ -1,8 +1,10 @@
 $(document).ready(function(){
   $("#question-one-question").click(function(){
-    $("#question-one-solution").show();
+    $("#question-one-solution").slideDown(); // first do show();
   });
   $("#question-two-question").click(function(){
-    $("#question-two-solution").show();
+    $("#question-two-solution").slideDown(); // first do show();
   });
+
+  $('#quotes').quovolver();
 });

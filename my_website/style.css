@@ -46,16 +46,16 @@ header, footer {
 
 #food {
     float: left;
-    width: 250px;
+    width: 230px;
     margin: 0;
-    padding: 1em;
+    padding: 10px;
     height: 500px;
 }
 
 #superpower {
     margin-left: 250px;
     border-left: 1px solid gray;
-    padding: 1em;
+    padding: 10px;
     height: 500px;
 }
 
@@ -69,8 +69,8 @@ img {
 
 
 #quiz {
-    float: left;
-    width: 240px;
+    width: 380px;
+    float: right;
     margin: 0;
     padding: 10px;
     height: 500px;
@@ -78,8 +78,8 @@ img {
 
 
 #biography {
-    margin-left: 250px;
-    border-left: 1px solid gray;
+    margin-right: 400px;
+    border-right: 1px solid gray;
     padding: 10px;
     height: 500px;
 }
@@ -93,3 +93,14 @@ img {
     color: green;
     display: none;
 }
+
+#quote-container {
+    height: 200px;
+}
+#quotes {
+    border-top: 1px solid gray;
+    font-family: 'Old Standard TT', serif;
+    height: 200px;
+}
+
+
