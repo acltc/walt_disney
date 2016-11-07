@@ -7,4 +7,9 @@ $(document).ready(function(){
   });
 
   $('#quotes').quovolver();
+
+  $("#lightSlider").lightSlider({
+    rtl:true
+  }); 
+
 });

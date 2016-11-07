@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Orbitron|Righteous" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="lightslider.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="jquery.quovolver.js"></script>
+  <script src="Chart.js"></script>
+  <script src="lightslider.js"></script>
+  <script src="my_javascript.js"></script>
+  
+  <script src="my_javascript.js" type="text/javascript"></script>
+  <body>
+
+    <div class="container">
+
+      <header>
+        <h1>Jay's Website</h1>
+      </header>
+
+      <ul id="nav">
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="history_report.html">History Report</a></li>
+        <li><a href="science_project.html">Science Project</a></li>
+      </ul>
+      
+      <div id="science-project">
+        <div id="experiment-pics">
+            <ul id="lightSlider">
+              <li>
+                <img src="duracell.jpg">
+              </li>
+              <li>
+                <img src="generic.jpg">
+              </li>
+              ...
+            </ul>
+        </div>
+        <h2>What's the best battery?</h2>
+        <p>My family has used many batteries over the years, but I always wondered which was the best. I plan to test both name-brand and generic batteries, find out which battery lasts the longest.</p>
+        <h2>Research</h2>
+        <p>According to Wikipedia, the AA Alkaline battries are the most commonly used for consumers. I will only test these types of batteries.</p>
+        <h2>Hypothesis</h2>
+        <p>I beleive the most expensive battery will last the longest.</p>
+        <h2>Experiment</h2>
+        <p>I will run a flashlight using different battery brands until the flashlight no longer generates any light</p>
+        <h2>Results</h2>
+        <canvas id="myChart" width="400" height="400"></canvas>
+        <script>
+        var ctx = document.getElementById("myChart");
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["Energizer", "Duracell", "CVS (Generic)", "Amazon Basics (Generic)"],
+                datasets: [{
+                    label: 'Hours Flashlight Lasted',
+                    data: [3.4, 3.6, 3.2, 2.9],
+                    backgroundColor: [
+                        'green',
+                        'blue',
+                        'red',
+                        'orange',
+                    ]
+                }]
+            }
+
+        });
+        </script>
+      </div>
+
+
+      <footer>Copyright ©2016</footer>
+
+    </div>
+
+  </body>
+  </html>

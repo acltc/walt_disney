@@ -1,5 +1,10 @@
-body {
+header, #nav {
     font-family: 'Righteous', cursive;
+}
+
+
+body {
+    font-family: 'Play', sans-serif;
 }
 
 div.container {
@@ -103,4 +108,10 @@ img {
     height: 200px;
 }
 
+
+/************************** Science Project ***************************/
+
+#science-project {
+    margin: 10px;
+}
 
