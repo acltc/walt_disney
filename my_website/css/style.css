@@ -1,0 +1,180 @@
+/************************** All Pages ***************************/
+
+header, #nav {
+  font-family: 'Righteous', cursive;
+}
+
+
+body {
+  font-family: 'Play', sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  width: 100%;
+  border: 1px solid gray;
+}
+
+#content {
+  padding: 10px 20px 100px 20px;
+}
+
+header, footer {
+  padding: 1em;
+  color: white;
+  background-color: purple;
+  clear: left;
+  text-align: center;
+}
+
+/*Navbar*/
+
+#nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #4d004d;
+}
+
+#nav li {
+  float: left;
+}
+
+#nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#nav li a:hover {
+  background-color: #111;
+}
+
+#img-right {
+  float: right;
+}
+
+/************************** Homepage *********************************/
+
+#homepage {
+  background: url(../img/calvin-background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#welcome-box {
+  width: 30%;
+  background: black;
+  opacity: 0.8;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  text-decoration: none;  
+}
+
+#welcome-box:hover { 
+    color: black;
+    background: white;
+}
+
+
+
+
+/************************** Biography Page ***************************/
+
+#list-top{
+  float: left;
+  width: 230px;
+  margin: 0;
+  padding: 10px;
+  height: 500px;
+}
+
+#list-top li {
+  list-style: none;
+}
+
+#superpower {
+  margin-left: 250px;
+  border-left: 1px solid gray;
+  padding: 10px;
+  height: 500px;
+}
+
+
+
+/************************** History Report ***************************/
+
+
+#quiz {
+  width: 380px;
+  float: right;
+  margin: 0;
+  padding: 10px;
+  height: 500px;
+}
+
+
+#biography {
+  margin-right: 400px;
+  border-right: 1px solid gray;
+  padding: 10px;
+  height: 500px;
+}
+
+#question-one-solution {
+  color: green;
+  display: none;
+}
+
+#question-two-solution {
+  color: green;
+  display: none;
+}
+
+#quote-container {
+  height: 200px;
+}
+#quotes {
+  border-top: 1px solid gray;
+  font-family: 'Old Standard TT', serif;
+  height: 200px;
+}
+
+
+/************************** Science Project ***************************/
+
+
+#image-container {
+  width: 600px;
+  float: right;
+  margin: 10px;
+}
+
+#chart-data {
+  clear: both;
+}
+
+#chart-heading {
+  text-align: center;
+}
+
+#content {
+  padding: 10px;
+}
+
+
+
+

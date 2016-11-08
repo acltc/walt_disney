@@ -4,66 +4,75 @@
   <title></title>
   <link href="https://fonts.googleapis.com/css?family=Orbitron|Righteous" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Dosis|Play" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <link rel="stylesheet" href="css/glide.core.css">
+  <link rel="stylesheet" href="css/glide.theme.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="jquery.quovolver.js"></script>
-  <script src="my_javascript.js" type="text/javascript"></script>
+  <script src="js/jquery.quovolver.js"></script>
+  <script src="js/Chart.js"></script>
+  <script src="js/glide.js"></script>
   <body>
 
-    <div class="container">
-
+    <div id="container">
       <header>
         <h1>Jay's Website</h1>
       </header>
 
       <ul id="nav">
-        <li><a href="index.html">About Me</a></li>
+        <li><a href="biography.html">Biography</a></li>
         <li><a href="history_report.html">History Report</a></li>
         <li><a href="science_project.html">Science Project</a></li>
       </ul>
       
-      <div id="quiz">
-        <h2>Lincoln Quiz</h2>
-        <div>
-          <p id="question-one-question">What state was Abraham Lincoln Born?</p>
-          <p id="question-one-solution">He was born in Kentucky.</p>
-          <p id="question-two-question">How tall was Abraham Lincoln?</p>
-          <p id="question-two-solution">He was 6ft, 4inches tall.</p>
+        <div id="quiz">
+          <h2>Lincoln Quiz</h2>
+          <div>
+            <p id="question-one-question">What state was Abraham Lincoln Born?</p>
+            <p id="question-one-solution">He was born in Kentucky.</p>
+            <p id="question-two-question">How tall was Abraham Lincoln?</p>
+            <p id="question-two-solution">He was 6ft, 4inches tall.</p>
+
+          </div>
+        </div>
+
+        <div id="biography">
+          <h2>Biography of Abraham Lincoln</h2>
+          <img id="img-right" src="img/lincoln.jpg">
+          <p>Abraham Lincoln came from modest beginnings, being born in a log cabin in 1809. Mainly self-educated, he became a lawyer, and later elected to the Illinois House of Representatives.</p>
+          <p>He became the 16th president of the United States, when the country tore itself apart due to slavery.</p>
+          <p>His greatest accomplishments are the <a href="https://en.wikipedia.org/wiki/Thirteenth_Amendment_to_the_United_States_Constitution">13th Ammendment</a> and winning the Civil War against the South, keeping the country together.</p>
 
         </div>
-      </div>
+        <div id=quote-container>
+          <div id="quotes">
+            <blockquote>
+            <p>“Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.”</p>
+            <p>— November 19, 1863 Gettysburg Address</p>
+            </blockquote>
 
-      <div id="biography">
-        <h2>Biography of Abraham Lincoln</h2>
-        <img src="lincoln.jpg">
-        <p>Abraham Lincoln came from modest beginnings, being born in a log cabin in 1809. Mainly self-educated, he became a lawyer, and later elected to the Illinois House of Representatives.</p>
-        <p>He became the 16th president of the United States, when the country tore itself apart due to slavery.</p>
-        <p>His greatest accomplishments are the <a href="https://en.wikipedia.org/wiki/Thirteenth_Amendment_to_the_United_States_Constitution">13th Ammendment</a> and winning the Civil War against the South, keeping the country together.</p>
+            <blockquote>
+            <p>“The man does not live who is more devoted to peace than I am. None who would do more to preserve it.”</p>
+            <p>— February 21, 1861 Address to the New Jersey General Assembly</p>
+            </blockquote>
 
-      </div>
-      <div id=quote-container>
-        <div id="quotes">
-          <blockquote>
-          <p>“Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.”</p>
-          <p>— November 19, 1863 Gettysburg Address</p>
-          </blockquote>
-
-          <blockquote>
-          <p>“The man does not live who is more devoted to peace than I am. None who would do more to preserve it.”</p>
-          <p>— February 21, 1861 Address to the New Jersey General Assembly</p>
-          </blockquote>
-
-          <blockquote>
-          <p>“In times like the present, men should utter nothing for which they would not willingly be responsible through time and eternity.”</p>
-          <p>— December 1, 1862 Message to Congress</p>
-          </blockquote>
-        </div><!-- .quotes -->
-      </div>
-
+            <blockquote>
+            <p>“In times like the present, men should utter nothing for which they would not willingly be responsible through time and eternity.”</p>
+            <p>— December 1, 1862 Message to Congress</p>
+            </blockquote>
+          </div><!-- .quotes -->
+        </div>
       <footer>Copyright ©2016</footer>
-
     </div>
-
   </body>
+    <script type="text/javascript">
+      $("#question-one-question").click(function(){
+        $("#question-one-solution").slideDown(); // first do show();
+      });
+      $("#question-two-question").click(function(){
+        $("#question-two-solution").slideDown(); // first do show();
+      });
+
+      $('#quotes').quovolver();
+    </script>
   </html>

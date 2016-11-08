@@ -5,77 +5,95 @@
   <link href="https://fonts.googleapis.com/css?family=Orbitron|Righteous" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="lightslider.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="css/glide.core.css">
+  <link rel="stylesheet" href="css/glide.theme.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="jquery.quovolver.js"></script>
-  <script src="Chart.js"></script>
-  <script src="lightslider.js"></script>
-  <script src="my_javascript.js"></script>
+  <script src="js/jquery.quovolver.js"></script>
+  <script src="js/Chart.js"></script>
+  <script src="js/glide.js"></script>
   
-  <script src="my_javascript.js" type="text/javascript"></script>
   <body>
-
-    <div class="container">
+    <div id="container">
 
       <header>
         <h1>Jay's Website</h1>
       </header>
 
       <ul id="nav">
-        <li><a href="index.html">About Me</a></li>
+        <li><a href="biography.html">Biography</a></li>
         <li><a href="history_report.html">History Report</a></li>
         <li><a href="science_project.html">Science Project</a></li>
       </ul>
-      
-      <div id="science-project">
-        <div id="experiment-pics">
-            <ul id="lightSlider">
-              <li>
-                <img src="duracell.jpg">
-              </li>
-              <li>
-                <img src="generic.jpg">
-              </li>
-              ...
-            </ul>
-        </div>
-        <h2>What's the best battery?</h2>
-        <p>My family has used many batteries over the years, but I always wondered which was the best. I plan to test both name-brand and generic batteries, find out which battery lasts the longest.</p>
-        <h2>Research</h2>
-        <p>According to Wikipedia, the AA Alkaline battries are the most commonly used for consumers. I will only test these types of batteries.</p>
-        <h2>Hypothesis</h2>
-        <p>I beleive the most expensive battery will last the longest.</p>
-        <h2>Experiment</h2>
-        <p>I will run a flashlight using different battery brands until the flashlight no longer generates any light</p>
-        <h2>Results</h2>
-        <canvas id="myChart" width="400" height="400"></canvas>
-        <script>
-        var ctx = document.getElementById("myChart");
-        var myChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ["Energizer", "Duracell", "CVS (Generic)", "Amazon Basics (Generic)"],
-                datasets: [{
-                    label: 'Hours Flashlight Lasted',
-                    data: [3.4, 3.6, 3.2, 2.9],
-                    backgroundColor: [
-                        'green',
-                        'blue',
-                        'red',
-                        'orange',
-                    ]
-                }]
-            }
 
-        });
-        </script>
+      <div id=content>
+        
+        <h2>What's the best battery?</h2>
+        <div id=image-container>
+          <div id="glide" class="glide">
+            <div class="glide__arrows">
+              <button class="glide__arrow prev" data-glide-dir="<">prev</button>
+              <button class="glide__arrow next" data-glide-dir=">">next</button>
+            </div>
+            <div class="glide__wrapper">
+              <ul class="glide__track">
+                <li class="glide__slide"><img src="img/lemon-battery.jpg"></li>
+                <li class="glide__slide"><img src="img/battery.jpg"></li>
+                <li class="glide__slide"><img src="img/pair-battery.jpg"></li>
+              </ul>
+            </div>
+            <div class="glide__bullets"></div>
+          </div>
+        </div>
+        <h3>Problem</h3>
+        <p>My family has used many batteries over the years, but I always wondered which was the best. I plan to test both name-brand and generic batteries, find out which battery lasts the longest.</p>
+        <h3>Research</h3>
+        <p>According to Wikipedia, the AA Alkaline battries are the most commonly used for consumers. I will only test these types of batteries.</p>
+        <h3>Hypothesis</h3>
+        <p>I beleive the most expensive battery will last the longest. But, I think one of the better generic batteries will be more cost effective.</p>
+        <h3>Experiment</h3>
+        <p>I will run a flashlight using different battery brands until the flashlight no longer generates any light.</p>
+        <h3 id="chart-data">Results</h3>
+        <p>See chart:</p>
+        <div id=image-container>
+          <h4 id="chart-heading">Battery Results Averaged Over 3 Tests</h4>
+          <canvas id="my-chart"></canvas>
+        </div>
+        <h3 id="chart-data">Conclusion</h3>
+        <p>Duracell was the longest lasting battery, but since generic CVS brand batteries were half the cost, they were greater value. I most things, I will only use CVS batteries from now on.</p>
       </div>
 
+    <footer>Copyright ©2016</footer>
+  </div>
+</body>
 
-      <footer>Copyright ©2016</footer>
+<script type="text/javascript">
+  $("#glide").glide({
+      type: "carousel"
+  });
+  
+  var ctx = document.getElementById("my-chart");
+  var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ["Energizer", "Duracell", "CVS (Generic)", "Amazon Basics (Generic)"],
+      datasets: [{
+        label: 'Hours Flashlight Lasted',
+        data: [3.4, 3.6, 3.2, 2.9],
+        backgroundColor: [
+        'green',
+        'blue',
+        'red',
+        'orange',
+        ]
+      }]
+    },
+    options: {
+         legend: {
+            display: false
+         }
+    }
 
-    </div>
-
-  </body>
-  </html>
+  });
+</script>
+</html>
