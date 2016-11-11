@@ -24,10 +24,10 @@ ul {
 }
 
 header, footer {
-  padding: 1em;
+  padding: 20px;
   color: white;
   background-color: purple;
-  clear: left;
+  clear: both;
   text-align: center;
 }
 
@@ -38,7 +38,7 @@ header, footer {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #4d004d;
+  background: #4d004d;
 }
 
 #nav li {
@@ -54,11 +54,17 @@ header, footer {
 }
 
 #nav li a:hover {
-  background-color: #111;
+  background: #111;
 }
 
 #img-right {
   float: right;
+  margin-left: 10px;
+}
+
+#avatar {
+  height: 200px;
+  width: 200px;
 }
 
 /************************** Homepage *********************************/
@@ -103,10 +109,10 @@ header, footer {
 }
 
 #list-top li {
-  list-style: none;
+  list-style-type: none;
 }
 
-#superpower {
+#bio-content {
   margin-left: 250px;
   border-left: 1px solid gray;
   padding: 10px;
